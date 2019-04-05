@@ -9,4 +9,5 @@ stock-item.component.ts is where you can alter the data in the widgets. The arra
 index.html references third parties such as Font Awesome.
 
 The styling of stock widgets is done in stock-item.components.css
+
 The styling of the webpage is done in app.component.css
