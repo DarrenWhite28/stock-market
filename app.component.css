@@ -1,0 +1,15 @@
+/*.container {
+  
+    background-color: #f0f0f0;
+    
+  }
+  */
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana, arial, sans-serif;
+    font-size: 20px;
+  }

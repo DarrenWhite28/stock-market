@@ -1,0 +1,39 @@
+<!--Back button-->
+<div class = "back">
+    <button [routerLink]="['/']"> <i class="fas fa-arrow-left"></i> </button>
+</div>
+
+<!--Container div-->
+<div class="stock-container" *ngFor="let stock of stocks; index as i">
+
+    <!--Prints the stocks name and it's abbreviation-->
+    <div class="name">{{stock.name + ' (' + stock.code + ')'}}
+
+</div>
+    <!--Prints the stocks price-->
+    <div class="price"
+    [class]="stock.isPositiveChange() ? 'positive' : 'negative'">
+    $ {{stock.price}} 
+
+</div>
+
+
+ <!--Percentage change-->
+<div class = "change">
+        <!-- Equation -->
+    {{ (stock.price - stock.previousPrice) / stock.price | percent}} 
+
+</div>
+
+</div>
+
+
+<div>
+    
+    <!--Navigation-->
+    
+    <button [routerLink]="['/coca-cola']"> <i class="fas fa-glass-cheers"></i></button>
+    <button [routerLink]="['/bkr']"> <i class="fas fa-dollar-sign"></i></button>
+    <button [routerLink]="['/dominos']"> <i class="fas fa-pizza-slice"></i></button>
+    
+</div>
